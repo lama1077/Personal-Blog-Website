@@ -1,0 +1,194 @@
+/*small devices (phones)*/
+@media (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 100px auto 40px;
+        grid-template-areas:
+            "hd "
+            "as "
+            "mn "
+            "ft ";
+        align-items: center;
+        justify-content: center;
+    }
+    /* header*/
+    header {
+        background: #f1eaea;
+        grid-area: hd;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 9px;
+    }
+
+    .h-list {
+        font-family: Arial, Helvetica, sans-serif;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        margin: 0 3px;
+    }
+    .s-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .soc-picture {
+        width: 8px;
+        height: 8px;
+    }
+    a:link {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
+/*tablets and large phones*/
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 100px auto 40px;
+        grid-template-areas:
+            "hd hd "
+            "as as "
+            "mn mn"
+            "ft ft";
+    }
+    /* header*/
+    header {
+        background: #f1eaea;
+        grid-area: hd;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h-list {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
+        margin: 0 10px;
+    }
+    .s-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .soc-picture {
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a:link {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
+
+/* laptops/desktops */
+@media (min-width: 1025) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 100px auto 40px;
+        grid-template-areas:
+            "hd hd hd hd hd hd"
+            "as as as as as as"
+            "mn mn mn mn mn mn"
+            "ft ft ft ft ft ft";
+        align-items: center;
+    }
+
+    /* header*/
+    header {
+        background: #f1eaea;
+        grid-area: hd;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h-list {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    li {
+        margin: 0 20px;
+    }
+    .s-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+        color: black;
+    }
+
+    .soc-picture {
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+    a:link {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
